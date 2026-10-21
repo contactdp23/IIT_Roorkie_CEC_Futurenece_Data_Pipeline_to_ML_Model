@@ -13,3 +13,33 @@ airflow.db
 .astro/*.local.yml
 .astro/*.local.yaml
 test_api.py 
+
+# Local backups and temporary debugging scripts
+*.bak
+*.backup
+*.before_ingest_fix
+*.pre_audit_backup
+*.pre_audit_v2_backup
+*.pre_audit_v3_backup
+*.pre_customer_fix.bak
+*.pre_product_fix.bak
+*_temp.py
+fix_ingest_task.py
+inspect_raw.py
+inspect_raw_schema.py
+list_warehouse_tables.py
+replace_elt_validation.py
+test_raw.py
+test_stg_*.py
+validate_customers_temp.py
+verify_etl.py
+verify_staging_tables.py
+
+# Generated pipeline outputs
+include/profiling/
+include/quarantine/
+include/staging/
+include/warehouse_*.duckdb
+
+# Local backup copies
+nammamart_etl_dpatil.backup.py
